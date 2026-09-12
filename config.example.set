@@ -1,0 +1,75 @@
+; H1TrendM15PullbackBreakoutEA - Default Exness Preset File
+; Target Asset: Gold (XAUUSD / XAUUSDm) & Crypto (BTCUSD)
+; Broker: Exness (Server Time = UTC+0)
+
+; === GENERAL SETTINGS ===
+InpTradeSymbol=
+InpMagicNumber=108151
+InpRiskPercent=0.25
+InpBlockSymbolLevel=1
+InpCooldownBars=1
+InpAllowLiveTrading=0
+
+; === TIMEFRAME & INDICATOR SETTINGS ===
+InpH1FastEMA=50
+InpH1SlowEMA=200
+InpH1ADXPeriod=14
+InpMinADX=20.0
+InpRequireEMASlope=1
+InpRequireDMIFilter=1
+InpM15PullbackEMA=20
+InpPullbackLookbackBars=5
+InpPullbackZoneToleranceATR=0.15
+InpRequirePullbackRejection=1
+InpMinBreakoutDistATR=0.05
+InpEnableBreakoutRetest=1
+InpM15ATRPeriod=14
+InpATRLookbackBars=50
+
+; === TRADING SESSION & TIME CONTROLS ===
+InpSessionProfile=1
+InpBrokerServerUTCOffset=0
+InpStartHourUTC=8
+InpStartMinUTC=0
+InpEndHourUTC=16
+InpEndMinUTC=0
+InpFilterWeekendCrypto=1
+InpEnableRolloverBlock=1
+InpRolloverBeforeMins=15
+InpRolloverAfterMins=15
+
+; === NEWS FILTER SETTINGS ===
+InpEnableNewsFilter=1
+InpNewsFilterMode=0
+InpNewsFilterInTester=0
+InpNewsBlackoutBeforeMins=30
+InpNewsBlackoutAfterMins=30
+InpNewsCurrency=USD
+
+; === RISK & MARGIN CONTROLS ===
+InpMaxRiskMoney=50.0
+InpMaxDailyLossMoney=50.0
+InpMaxDailyLossPct=1.0
+InpMaxDailyLosingTrades=2
+InpMaxWeeklyLossPct=3.0
+InpDrawdownKillSwitchPct=5.0
+InpMaxRequiredMarginPct=20.0
+InpMinFreeMarginPct=50.0
+InpMinMarginLevelPct=300.0
+InpExtraCommissionPerLot=0.0
+InpExpectedSlippagePoints=2.0
+
+; === EXECUTION & POSITION MANAGEMENT ===
+InpTPMultiplier=1.8
+InpMaxDeviation=10
+InpMaxAdverseDriftATR=0.20
+InpMaxTotalDistanceATR=0.40
+InpBETriggerR=1.2
+InpBECostBufferPoints=2.0
+InpTrailTriggerR=1.3
+InpTrailATRMultiplier=1.5
+InpTimeExitBars=16
+InpEnablePartialExit=0
+InpPartialExitPct=50.0
+InpPartialExitTriggerR=1.2
+InpPartialRunnerTPMult=2.5

@@ -1,0 +1,76 @@
+; H1TrendM15PullbackBreakoutEA - Preset for Gold (XAUUSD / XAUUSDm)
+; Broker: Exness (Server Time = UTC+0)
+; Strategy: London Open (08:00-12:00 UTC) & London/NY Overlap (12:00-16:00 UTC)
+; Tier 1 News Filter Only (FOMC, CPI, NFP, Fed Rate Decisions)
+
+; === GENERAL SETTINGS ===
+InpTradeSymbol=
+InpMagicNumber=108151
+InpRiskPercent=2.0
+InpBlockSymbolLevel=1
+InpCooldownBars=1
+InpAllowLiveTrading=0
+
+; === TIMEFRAME & INDICATOR SETTINGS ===
+InpH1FastEMA=21
+InpH1SlowEMA=55
+InpH1ADXPeriod=14
+InpMinADX=20.0
+InpRequireEMASlope=1
+InpRequireDMIFilter=1
+InpM15PullbackEMA=20
+InpPullbackLookbackBars=5
+InpPullbackZoneToleranceATR=0.15
+InpRequirePullbackRejection=1
+InpMinBreakoutDistATR=0.05
+InpEnableBreakoutRetest=1
+InpM15ATRPeriod=14
+InpATRLookbackBars=50
+
+; === TRADING SESSION & TIME CONTROLS ===
+InpSessionProfile=1
+InpBrokerServerUTCOffset=0
+InpStartHourUTC=8
+InpStartMinUTC=0
+InpEndHourUTC=16
+InpEndMinUTC=0
+InpFilterWeekendCrypto=1
+InpEnableRolloverBlock=1
+InpRolloverBeforeMins=15
+InpRolloverAfterMins=15
+
+; === NEWS FILTER SETTINGS ===
+InpEnableNewsFilter=1
+InpNewsFilterMode=1
+InpNewsFilterInTester=0
+InpNewsBlackoutBeforeMins=30
+InpNewsBlackoutAfterMins=30
+InpNewsCurrency=USD
+
+; === RISK & MARGIN CONTROLS ===
+InpMaxRiskMoney=15.0
+InpMaxDailyLossMoney=30.0
+InpMaxDailyLossPct=6.0
+InpMaxDailyLosingTrades=2
+InpMaxWeeklyLossPct=15.0
+InpDrawdownKillSwitchPct=20.0
+InpMaxRequiredMarginPct=40.0
+InpMinFreeMarginPct=50.0
+InpMinMarginLevelPct=200.0
+InpExtraCommissionPerLot=0.0
+InpExpectedSlippagePoints=2.0
+
+; === EXECUTION & POSITION MANAGEMENT ===
+InpTPMultiplier=2.5
+InpMaxDeviation=15
+InpMaxAdverseDriftATR=0.20
+InpMaxTotalDistanceATR=0.40
+InpBETriggerR=1.5
+InpBECostBufferPoints=2.0
+InpTrailTriggerR=1.8
+InpTrailATRMultiplier=2.0
+InpTimeExitBars=16
+InpEnablePartialExit=0
+InpPartialExitPct=50.0
+InpPartialExitTriggerR=1.2
+InpPartialRunnerTPMult=2.5
